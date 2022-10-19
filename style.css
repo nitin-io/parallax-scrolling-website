@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 100000;
 }
 
 #header .logo{
@@ -47,9 +47,10 @@ body {
     text-decoration: none;
     padding: 6px 15px;
     color: #094b65;
+    border-radius: 20px;
 }
 
-#header ul li a:hover, #header ul li a:active {
+#header ul li a:hover, #header ul li a.active {
     background-color: #094b65;
     color: #fff;
 }
@@ -89,15 +90,29 @@ section #text {
     color: #094b65;
     font-size: 10vw;
     text-align: center;
-    line-height: 0.5;
+    line-height: 0.55em;
     font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
 }
 
 section #text span{
-    font-size: 0.2em;
+    font-size: 0.20em;
     letter-spacing: 2px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: #f00;
+    color: #094b65;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
 }
 
 .section {
